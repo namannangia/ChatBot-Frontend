@@ -8,24 +8,81 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #78bb7b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: rgba(255, 255, 255, 1) rgba(255, 255, 255, 1);
 }
 
-.heart {
-  color: #ff0000;
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
 }
 
-.small {
-  font-size: 0.75rem;
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+}
+
+.SubmitButtonTwo {
+  outline: none;
+  margin-left: 10px;
+  background-color: rgba(107, 114, 201, 1);
+  color: white;
+  background-color: #2b552d;
+  height: 5.5vh;
+  border-radius: 10px;
+  transition: all 0.5s;
+  padding: 10px;
+  width: 7vw;
+  cursor: pointer;
+  border: none;
+}
+
+
+.SubmitButtonTwo:hover span {
+  padding-right: 8px;
+}
+
+.SubmitButtonTwo:hover:disabled span {
+  padding-right: 0px;
+  cursor: default;
+}
+
+.SubmitButtonTwo span {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.SubmitButtonTwo span:after {
+  content: " »";
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.SubmitButtonTwo:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.SubmitButtonTwo:disabled span:after {
+  content: " »";
+  cursor: default;
+  opacity: 0;
 }

@@ -1,0 +1,89 @@
+#upperDiv {
+	flex: 1;
+	display: flex;
+}
+
+.heading {
+	/* color: black; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* text-decoration: underline; */
+	flex: 1;
+	margin: 0;
+}
+
+#textHolder {
+	white-space: pre-wrap;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 3% 7% 7% 7%;
+	box-shadow: 40px 15px 35px rgb(0 0 0/0.7);
+	/* background-color: #2b552d; */
+	background-color: #448848;
+	border-radius: 20px;
+}
+
+.btn {
+	flex: 1;
+	align-self: center;
+	/* margin: 2%; */
+	font-size: 16px;
+	padding:  15px 20px;
+	outline: none;
+	margin: 20px;
+	background-color: rgba(107, 114, 201, 1);
+	color: white;
+	background-color: #2b552d;
+	/* height: 5.5vh; */
+	border-radius: 10px;
+	transition: all 0.5s;
+	/* padding: 10px; */
+	/* width: 7vw; */
+	cursor: pointer;
+	border: none;
+}
+
+#mainDiv {
+	flex: 10;
+	display: flex;
+	flex-direction: column;
+}
+
+.horRow {
+	width: 100%;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+#myInput {
+	flex: 10;
+	font-weight: bold;
+	border: 2px solid black;
+	border-radius: 15px;
+	margin: 20px;
+	font-size: 20px;
+	padding: 5px 5px 5px 15px;
+	outline: none;
+	overflow: hidden;
+	background-color: #e1eedd;
+	color: #3e54ac;
+}
+
+#myInput::placeholder {
+	color: #b0b8d8;
+	font-weight: lighter;
+}
+
+#resultingDiv {
+	flex: 20;
+	font-size: 20px;
+	text-align: left;
+	padding: 5px;
+	overflow-y: auto;
+	/* border: 2px solid black; */
+	border-radius: 0px 0px 20px 20px;
+	margin: 10px;
+}
