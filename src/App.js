@@ -29,8 +29,7 @@ function App() {
                 setViewNumber((prev) => prev + 1);
               }}
               hidden={
-                transcript.length <= "Content recieved!".length ||
-                viewNumber !== 0
+                transcript.length <="Content recieved!".length 
               }
             >
               <span>Next Step</span>
