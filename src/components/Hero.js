@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Hero.css";
+import { BASE_URL } from "../constants";
 
 function Hero({ transcript, setTranscript }) {
   const instance = axios.create({
     baseURL:
-      "https://namannangia-bug-free-system-xg5x7r4959g36ppx-8800.preview.app.github.dev/api",
+      BASE_URL,
   });
   const handleResponse = (response) => {
-    // alert(response.data)
     setTranscript(response);
   };
   function handleClick() {

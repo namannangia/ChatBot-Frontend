@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./theme.css";
+import { BASE_URL } from "../constants";
 
 function Chat() {
   const [txt, setTxt] = useState("");
@@ -13,10 +14,7 @@ function Chat() {
     }
     setResult("Loading...");
     axios
-      .post(
-        "https://namannangia-bug-free-system-xg5x7r4959g36ppx-8800.preview.app.github.dev/api/queryContext",
-        { text: txt }
-      )
+      .post(BASE_URL + "/queryContext", { text: txt })
       .then((res) => {
         var ans = res.data.text;
         setResult(ans);
